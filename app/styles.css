@@ -26,11 +26,7 @@ body {
 
 .main-table {
   background-color: white;
-  width: 400px;
-  height: 400px;
+  width: 370px;
+  height: 370px;
   border-collapse: collapse;
-}
-
-.main-table__square {
-  border: 1px solid black;
 }
