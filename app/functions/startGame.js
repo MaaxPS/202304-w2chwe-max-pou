@@ -1,7 +1,9 @@
-const startGame = (squaresList) => {
+const startGame = (squares, squaresLife) => {
+  let randomNumber;
   for (let i = 0; i < 20; i++) {
-    squaresList[Math.floor(Math.random() * 100)].style.backgroundColor =
-      "black";
+    randomNumber = Math.floor(Math.random() * 100);
+    squares[randomNumber].style.backgroundColor = "black";
+    squaresLife[randomNumber] = true;
   }
 };
 
