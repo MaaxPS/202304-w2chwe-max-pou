@@ -1,5 +1,5 @@
 // eslint-disable-next-line complexity
-const nextGeneration = (squares, squaresLife) => {
+const nextGeneration = (squaresLife) => {
   const squaresLifeCopy = [];
   let neighboursAlive;
   let numberNeighboursAlive = 0;
@@ -145,17 +145,7 @@ const nextGeneration = (squares, squaresLife) => {
     numberNeighboursAlive = 0;
   }
 
-  squaresLife = [...squaresLifeCopy];
-
-  for (let i = 0; i < 100; i++) {
-    if (squaresLife[i]) {
-      squares[i].style.backgroundColor = "black";
-    } else if (!squaresLife[i]) {
-      squares[i].style.backgroundColor = "white";
-    }
-  }
-
-  return squaresLife;
+  return squaresLifeCopy;
 };
 
 export default nextGeneration;
